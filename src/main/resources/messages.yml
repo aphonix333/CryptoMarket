@@ -1,0 +1,60 @@
+# CryptoMarket Messages File
+# Plugin Version: 0.1-BETA
+# Messages Config Version: 0.1
+
+NoPermissionMessage: "&c✖ You don't have permission to do that!"
+
+#/crypto admin add:
+CommandAdminAddCorrectUsage: "&e✎ Correct usage: &f/crypto admin add [tokenname] [tokens/capitalization] [amount]"
+CommandAdminAddToken: "&a✔ Successfully added &f%AMOUNT% &ato %TOKEN% capitalization"
+CommandAdminAddCapitalization: "&a✔ Successfully subtracted &f%AMOUNT%$ &afrom capitalization\n&7Capitalization: &f%CAPITALIZATIONBEFORE% &7→ &f%CAPITALIZATIONAFTER%\n&7All Tokens: &f%ALLTOKENSBEFORE% &7→ &f%ALLTOKENSAFTER%\n&7Token price: &f%TOKENPRICEBEFORE%$ &7→ &f%TOKENPRICEAFTER%$"
+
+#/crypto admin give:
+CommandAdminGiveCorrectUsage: "&e✎ Correct usage: &f/crypto admin give [tokenname] [player] [amount]"
+CommandAdminGive: "&a✔ Successfully gave &f%AMOUNT% %TOKEN% &ato %PLAYER%"
+CommandAdminGive2: "&7ℹ For now %TOKEN% has &f%TOKENALLTOKENS%"
+
+#/crypto admin reload:
+CommandAdminReload: "&e⟳ Reloading.."
+CommandAdminReload2: "&e⟳ Reloading..."
+CommandAdminReloadSuccessful: "&a✔ Plugin reloaded successfully!"
+
+#/crypto admin subtract:
+CommandAdminSubtractUsage: "&e✎ Correct usage: &f/crypto admin subtract [tokenname] [capitalization/tokens] [amount]"
+CommandAdminSubtractCapitalization: "&c✔ Successfully subtracted &f%AMOUNT%$ &cfrom capitalization\n&7Capitalization: &f%CAPITALIZATIONBEFORE% &7→ &f%CAPITALIZATIONAFTER%\n&7All Tokens: &f%ALLTOKENSBEFORE% &7→ &f%ALLTOKENSAFTER%\n&7Token price: &f%TOKENPRICEBEFORE%$ &7→ &f%TOKENPRICEAFTER%$"
+CommandAdminSubtractTokens: "&c✔ Successfully subtracted &f%AMOUNT% &ctokens\n&7Available Tokens: &f%TOKENSBEFORE% &7→ &f%TOKENSAFTER%\n&7Token price: &f%TOKENPRICEBEFORE%$ &7→ &f%TOKENPRICEAFTER%$"
+
+#/crypto admin take:
+CommandAdminTakeWrongAmount: "&c✖ The written amount is smaller than player's token balance"
+CommandAdminTakeCorrectUsage: "&e✎ Correct usage: &f/crypto admin take [tokenname] [player] [amount]"
+
+#/crypto buy:
+CommandBuyCorrectUsage: "&e✎ Correct usage: &f/crypto buy [tokenname] [amount in $]"
+CommandBuyNoBall: "&c✖ You don't have enough money to buy this token."
+CommandBuyNoTokensLeft: "&c✖ You can't buy %TOKEN%, no tokens left in circulation."
+CommandBuyMinimalValue: "&c✖ Minimal value is &f1$"
+CommandBuyCapitalizationIsZero: "&c✖ Capitalization is &f0$&c, you cannot buy this token."
+CommandBuyCapitalizationIsSmallerOfZero: "&c✖ Error: capitalization is below 0!"
+CommandBuyAfterBuy: "&a✔ You successfully bought &f%TOKENRECEIVED% %TOKEN% &afor &f%AMOUNT%$\n&7Purchase price: &f%TOKENPRICEAFTER%$"
+CommandBuyCorrectNumber: "&c✖ Enter a correct number! Example: &f/crypto buy BTC 10"
+
+#/crypto get:
+CommandGetCorrectUsage: "&e✎ Usage: &f/crypto get [tokenname]"
+CommandGetUsage: "&7Your balance: &f%PLAYERCRYPTOBAL% %TOKEN%"
+CommandGetUnknownCurrency: "&c✖ Unknown currency!"
+
+#/crypto sell:
+CommandSellCorrectUsage: "&e✎ Correct usage: &f/crypto sell [tokenname] [amount]"
+CommandSellNoTokenBall: "&c✖ You don't have enough %TOKEN% to sell."
+CommandSellMinimalValue: "&c✖ Minimal value is &f~0.00000000000001"
+CommandSellNoCapitalization: "&e⚠ Capitalization is &f0$&e, your %TOKEN% was sold but you received &f0$"
+CommandSellCapitalizationSmallerThanZero: "&c✖ Error: capitalization is below 0!"
+CommandSellAfterSell: "&a✔ You successfully sold &f%AMOUNT% %TOKEN%\n&7You received: &f%MONEYAFTERSELL%$\n&7Course: &f%COURSEBEFORESELL% &7→ &f%COURSEAFTERSELL%"
+
+#/crypto help:
+CommandHelpCorrectUsage: "&e✎ Usage: &f/crypto help &7or &f/crypto help admin"
+CommandHelp: "&b=== CryptoMarket Help ===\n&e/crypto buy [token] [amount in $] &7- Buy tokens\n&e/crypto sell [token] [amount] &7- Sell tokens\n&e/crypto get [token] &7- Check your balance"
+CommandHelpAdmin: "&b=== CryptoMarket Admin Help ===\n&e/crypto admin add [token] [tokens/capitalization] [amount] &7- Add tokens/capitalization\n&e/crypto admin give [token] [player] [amount] &7- Give tokens to a player\n&e/crypto admin subtract [token] [tokens/capitalization] [amount] &7- Subtract tokens/capitalization\n&e/crypto admin take [token] [player] [amount] &7- Take tokens from a player\n&e/crypto admin reload &7- Reload plugin & refresh everything"
+
+CommandAdminUsage: "&e✎ Correct usage: &f/crypto admin add | give | reload | subtract | take"
+CommandUsage: "&e✎ Usage: &f/crypto buy | sell | get | admin"

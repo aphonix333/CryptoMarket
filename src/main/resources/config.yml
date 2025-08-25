@@ -1,0 +1,40 @@
+# Token Data Information:
+# ⚠️ DO NOT CHANGE THIS IF YOU DON'T KNOW WHAT YOU ARE DOING ⚠️
+# If you want to change token data, please do it in
+# "Token Configuration" and reload the plugin afterwards.
+# This section is automatically updated based on calculations
+# from Token Configuration.
+
+Token price: 100.0 # BTC price = TokenCapitalization / AllTokens
+Tokens left: 10.0  # To add new tokens into circulation,
+  # use the command: /crypto [token] add [calculation] [amount]
+  # Changing this value here will NOT automatically
+# update "Token all tokens" in Token Configuration.
+# -----------------------------------------------------
+
+# Token Configuration:
+Token Name: BTC
+Token all tokens: 10.0
+Token Capitalization: 1000.0
+Token Buy Tax: 1.0 # in %
+Token Sell Tax: 1.0 # in %
+Capitalization sell tax: 1.0 # in %
+# ⚠️ Please set a tax for the token.
+# If tax is 0, players may duplicate or exploit free tokens
+# by manipulating very small decimal numbers.
+
+# Admin Permissions:
+BypassAllAdminCommand: crypto.admin.*
+CommandCryptoAdminReload: crypto.admin.reload
+CommandCryptoAdminAdd: crypto.admin.add
+CommandCryptoAdminGive: crypto.admin.give
+CommandCryptoAdminSubtract: crypto.admin.subtract
+CommandCryptoAdminTake: crypto.admin.take
+# Player Permissions:
+RequirePlayerCommandsPermissions: false
+CommandCryptoBuy: crypto.buy
+CommandCryptoGet: crypto.get
+CommandCryptoSell: crypto.get
+
+# Debug Mode - for finding bugs (BETA FEATURE)
+DebugMode: false

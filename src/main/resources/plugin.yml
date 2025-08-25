@@ -1,0 +1,11 @@
+name: CryptoMarket
+version: '1.0'
+main: com.aphonix.cryptoMarket.Main
+api-version: '1.21'
+authors: [ aphonix ]
+description: Cool test plugin
+depend: [Vault]
+commands:
+  crypto:
+    description: Reloads the configuration for DisableMending
+    usage: /joinmessage reload
