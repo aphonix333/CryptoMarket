@@ -30,7 +30,6 @@ public class CCryptoBuy {
         if (!(sender instanceof Player)) {
             sender.sendMessage("Only players can use this command.");
             return true; }
-
         if (args.length >= 3) {
             String currency = args[1];
             String amountStr = args[2];

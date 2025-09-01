@@ -1,11 +1,11 @@
 name: CryptoMarket
-version: '1.0'
+version: '1.0-BETA'
 main: com.aphonix.cryptoMarket.Main
 api-version: '1.21'
 authors: [ aphonix ]
-description: Cool test plugin
+description: Simulate Crypto Market Inside Your Server
 depend: [Vault]
 commands:
   crypto:
-    description: Reloads the configuration for DisableMending
-    usage: /joinmessage reload
+    description: Crypto Command
+    usage: /crypto help

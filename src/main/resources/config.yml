@@ -38,3 +38,7 @@ CommandCryptoSell: crypto.get
 
 # Debug Mode - for finding bugs (BETA FEATURE)
 DebugMode: false
+
+# CryptoMarket Config File
+# Plugin Version: 1.0-BETA
+# Config Version: 1.0

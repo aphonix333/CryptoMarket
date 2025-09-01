@@ -38,14 +38,14 @@ public class CryptoTab implements TabCompleter {
             results.add(plugin.getConfig().getString("Token Name"));
         }
         else if (args.length == 3 && args[0].equalsIgnoreCase("buy")) {
-            results.add("amount in $");
+            results.add(plugin.getConfig().getString("amountin$"));
         }
 // Sell
         else if (args.length == 2 && args[0].equalsIgnoreCase("sell")) {
             results.add(plugin.getConfig().getString("Token Name"));
         }
           else if (args.length == 3 && args[0].equalsIgnoreCase("sell")) {
-            results.add("amount in token");
+            results.add(plugin.getConfig().getString("amountintoken"));
         }
 // Help
         else if (args.length == 2 && args[0].equalsIgnoreCase("help")) {
@@ -64,11 +64,11 @@ public class CryptoTab implements TabCompleter {
             results.add(plugin.getConfig().getString("Token Name"));
         }
         else if (args.length == 4 && args[0].equalsIgnoreCase("admin") && args[1].equalsIgnoreCase("add")) {
-            results.add("tokens");
-            results.add("capitalization");
+            results.add(plugin.getConfig().getString("tokens"));
+            results.add(plugin.getConfig().getString("capitalization"));
         }
         else if (args.length == 5 && args[0].equalsIgnoreCase("admin") && args[1].equalsIgnoreCase("add")) {
-            results.add("amount");
+            results.add(plugin.getConfig().getString("amount"));
         }
 // Give
         else if (args.length == 3 && args[0].equalsIgnoreCase("admin") && args[1].equalsIgnoreCase("give")) {
@@ -80,18 +80,18 @@ public class CryptoTab implements TabCompleter {
             }
         }
         else if (args.length == 5 && args[0].equalsIgnoreCase("admin") && args[1].equalsIgnoreCase("give")) {
-            results.add("amount");
+            results.add(plugin.getConfig().getString("amount"));
         }
 // Subtract
         else if (args.length == 3 && args[0].equalsIgnoreCase("admin") && args[1].equalsIgnoreCase("subtract")) {
             results.add(plugin.getConfig().getString("Token Name"));
         }
         else if (args.length == 4 && args[0].equalsIgnoreCase("admin") && args[1].equalsIgnoreCase("subtract")) {
-            results.add("tokens");
-            results.add("capitalization");
+            results.add(plugin.getConfig().getString("tokens"));
+            results.add(plugin.getConfig().getString("capitalization"));
         }
         else if (args.length == 5 && args[0].equalsIgnoreCase("admin") && args[1].equalsIgnoreCase("subtract")) {
-            results.add("amount");
+            results.add(plugin.getConfig().getString("amount"));
         }
 // Take
         else if (args.length == 3 && args[0].equalsIgnoreCase("admin") && args[1].equalsIgnoreCase("take")) {
@@ -103,7 +103,7 @@ public class CryptoTab implements TabCompleter {
             }
         }
         else if (args.length == 5 && args[0].equalsIgnoreCase("admin") && args[1].equalsIgnoreCase("take")) {
-            results.add("amount");
+            results.add(plugin.getConfig().getString("amount"));
         }
         return results;
     }

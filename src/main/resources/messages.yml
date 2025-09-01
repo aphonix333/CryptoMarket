@@ -1,7 +1,3 @@
-# CryptoMarket Messages File
-# Plugin Version: 0.1-BETA
-# Messages Config Version: 0.1
-
 NoPermissionMessage: "&c✖ You don't have permission to do that!"
 
 #/crypto admin add:
@@ -35,7 +31,7 @@ CommandBuyNoTokensLeft: "&c✖ You can't buy %TOKEN%, no tokens left in circulat
 CommandBuyMinimalValue: "&c✖ Minimal value is &f1$"
 CommandBuyCapitalizationIsZero: "&c✖ Capitalization is &f0$&c, you cannot buy this token."
 CommandBuyCapitalizationIsSmallerOfZero: "&c✖ Error: capitalization is below 0!"
-CommandBuyAfterBuy: "&a✔ You successfully bought &f%TOKENRECEIVED% %TOKEN% &afor &f%AMOUNT%$\n&7Purchase price: &f%TOKENPRICEAFTER%$"
+CommandBuyAfterBuy: "&a✔ You successfully bought &f%TOKENRECEIVED% %TOKEN% &afor &f%AMOUNT%$\n&7Purchase price: &f%TOKENPRICEAFTERBUY%$"
 CommandBuyCorrectNumber: "&c✖ Enter a correct number! Example: &f/crypto buy BTC 10"
 
 #/crypto get:
@@ -58,3 +54,14 @@ CommandHelpAdmin: "&b=== CryptoMarket Admin Help ===\n&e/crypto admin add [token
 
 CommandAdminUsage: "&e✎ Correct usage: &f/crypto admin add | give | reload | subtract | take"
 CommandUsage: "&e✎ Usage: &f/crypto buy | sell | get | admin"
+
+#CRYPTO COMMANDS TAB:
+amount: "amount"
+tokens: "tokens"
+capitalization: "capitalization"
+amountin$: "amount in $"
+amountintoken: "amount in token"
+
+# CryptoMarket Messages File
+# Plugin Version: 1.0-BETA
+# Messages Config Version: 1.0
